@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Investimento </title>
+    </head>
+    <body>
+        <h1> Retorno do Investimento </h1>
+        Capital Inicial: <input id="capital"><br>
+        Tempo em meses: <input id="meses"><br>
+        Taxa de Juros: <input id="juros"><br>
+        <button onclick="investimento(document.getElementById('capital').value, document.getElementById('meses').value, 
+        document.getElementById('juros').value)"> Retorno </button>
+
+        <script>
+            function investimento(capital, meses, juros){
+                const taxaJuros = juros / 100;
+                const retorno = capital * Math.pow(1 + taxaJuros, meses);
+                window.alert(`O Retorno de insvetimento foi: R$ ${retorno.toFixed(2)}`);
+            }
+        </script>
+    </body>
+</html>

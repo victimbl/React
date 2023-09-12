@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Area Triangulo</title>
+    </head>
+    <body>
+        base: <input type="number" id="base"><br>
+        altura: <input type="number" id="altura"><br>
+        <button onclick="area(document.getElementById('base').value, document.getElementById('altura').value)"> Area </button>
+        
+        <script>
+            function area(base, altura){
+                const result = (base * altura)/2;
+                window.alert(result);
+            }
+        </script>
+    </body>
+</html>

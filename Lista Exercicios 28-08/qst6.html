@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Inverter Numero</title>
+    </head>
+    <body>
+        Numero: <input type="number" id="numero"><br>
+        <button onclick="inverter(document.getElementById('numero').value)"> Inverter </button><br>
+        Inversão: <div id="invert" style="display:inline"></div>
+
+        <script>
+            function inverter(num){
+                var inversao = document.getElementById('invert');
+                var result = parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num);
+                inversao.innerHTML = result;
+            }
+        </script>
+        </body>
+</html>

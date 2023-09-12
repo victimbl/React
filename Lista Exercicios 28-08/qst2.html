@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Numero ao cubo</title>
+    </head>
+    <body>
+        number: <input type="number" name="a" id="a"><br>
+        <button onclick="cubo(document.getElementById('a').value)">Cubo</button>
+
+        <script>
+            function cubo(a){
+                const result = Math.pow(a, 3);
+                window.alert(result)
+            }
+        </script>
+    </body>
+</html>

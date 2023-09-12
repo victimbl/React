@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Vogais</title>
+        <title> Vogais </title>
     </head>
     <body>
-        Palavra: <
-        <button onclick="contar()"
+        Palavra: <input id="palavra"><br>
+        <button onclick="contar(document.getElementById('palavra').value)"> Vogais </button>
         <script>
             function contar(palavra){
                 const vogais = 'aeiouAEIOU';
